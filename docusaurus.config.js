@@ -74,7 +74,7 @@ const config = {
             label: 'Projects',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/thp-lab',
             label: 'GitHub',
             position: 'right',
           },
@@ -88,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Projects',
-                to: '/docs/intro',
+                to: '/docs/showcase',
               },
             ],
           },
@@ -96,16 +96,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discordapp.com/invite/THP-Lab',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'THP',
+                href: 'https://www.thehackingproject.org/',
               },
             ],
           },
@@ -113,17 +109,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/thp-lab',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} THP-Lab. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

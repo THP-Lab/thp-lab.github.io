@@ -9,27 +9,25 @@ const FeatureList = [
     description: (
       <>
         Inspirée par des études de scientifiques des universités de Berkeley, Harvard, et Yale, notre pédagogie est la plus adaptée pour former aux métiers modernes, et considérée comme l'une des meilleures au monde.
+      </>
+    ),
+  },
+  {
+    title: 'Concentrez vous sur les choses importantes',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
         Notre recette en une phrase ? Vous apprenez d'où vous voulez, en communauté, en faisant des projets concrets.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
+    title: 'Travaillez sur des projets innovants',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+      THP-Lab cherche à promouvoir et aider au développement de projets Open-Source qui pourraient changer les choses. 
+      Rejoignez ceux qui veulent laisser leur marque. 
       </>
     ),
   },
