@@ -4,12 +4,12 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Une pédagogie révolutionnaire',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Inspirée par des études de scientifiques des universités de Berkeley, Harvard, et Yale, notre pédagogie est la plus adaptée pour former aux métiers modernes, et considérée comme l'une des meilleures au monde.
+        Notre recette en une phrase ? Vous apprenez d'où vous voulez, en communauté, en faisant des projets concrets.
       </>
     ),
   },
@@ -35,7 +35,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
