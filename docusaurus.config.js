@@ -90,6 +90,7 @@ const config = {
             label: "Projects",
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/blog-THP', label: 'blog-THP', position: 'left' },
           {
             href: "https://github.com/thp-lab",
             label: "GitHub",

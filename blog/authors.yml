@@ -14,6 +14,7 @@ Mcdp:
   url: https://github.com/MacDuPain
   image_url: https://avatars.githubusercontent.com/u/164226646?v=4
   email: godel.sacha@gmail.com
+  description: Je suis un développeur de 27 ans motivé à travailler ! 
   page:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: '/all-sacha-godel-articles'
