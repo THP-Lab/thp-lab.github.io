@@ -1,7 +1,7 @@
 ---
 slug: Introduction-à-Intuition
 title: Introduction à Intuition
-# authors: Zealr
+authors: [Zealr, Mcdp]
 tags: [hello, docusaurus]
 ---
 

@@ -5,17 +5,18 @@ Zealr:
   image_url: https://avatars.githubusercontent.com/u/165075472?v=4
   page: true
   socials:
-    linkedin: Thomas Bobichon
     github: ZealRa
+    linkedin: thomas-bobichon-824b65300
 
 Mcdp:
   name: Sacha Godel
   title: Junior developer fullstack
   url: https://github.com/MacDuPain
   image_url: https://avatars.githubusercontent.com/u/164226646?v=4
+  email: godel.sacha@gmail.com
   page:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: '/all-sacha-godel-articles'
   socials:
-    linkedin: Sacha Godel
     github: MacDuPain
+    linkedin: sacha-godel-862a2a300
