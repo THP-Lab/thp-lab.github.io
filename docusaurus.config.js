@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'THP Lab',
-  tagline: 'W3C is cool',
+  tagline: 'dinausors are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
