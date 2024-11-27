@@ -49,6 +49,21 @@ const config = {
           editUrl:
             "https://github.com/THP-Lab/thp-lab.github.io/tree/master",
         },
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/THP-Lab/thp-lab.github.io/tree/master',
+          // Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -74,6 +89,7 @@ const config = {
             position: "left",
             label: "Projects",
           },
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: "https://github.com/thp-lab",
             label: "GitHub",
@@ -98,11 +114,11 @@ const config = {
             items: [
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/THP-Lab",
+                to: "https://discordapp.com/invite/THP-Lab",
               },
               {
                 label: "THP",
-                href: "https://www.thehackingproject.org/",
+                to: "https://www.thehackingproject.org/",
               },
             ],
           },
@@ -110,8 +126,12 @@ const config = {
             title: "More",
             items: [
               {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
                 label: "GitHub",
-                href: "https://github.com/thp-lab",
+                to: "https://github.com/thp-lab",
               },
             ],
           },
