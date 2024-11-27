@@ -1,23 +1,21 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+Zealr:
+  name: Thomas Bobichon
+  title: Junior developper fullstack
+  url: https://github.com/ZealRa
+  image_url: https://avatars.githubusercontent.com/u/165075472?v=4
   page: true
   socials:
-    x: yangshunz
-    github: yangshun
+    linkedin: Thomas Bobichon
+    github: ZealRa
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+Mcdp:
+  name: Sacha Godel
+  title: Junior developer fullstack
+  url: https://github.com/MacDuPain
+  image_url: https://avatars.githubusercontent.com/u/164226646?v=4
   page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+    permalink: '/all-sacha-godel-articles'
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    linkedin: Sacha Godel
+    github: MacDuPain
