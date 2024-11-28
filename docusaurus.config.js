@@ -71,6 +71,27 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Nécessaire pour tout plugin multi-instance
+         */
+        id: 'second-blog',
+        /**
+         * Route URL pour la section blog de votre site.
+         * *NE PAS* inclure de slash à la fin.
+         */
+        routeBasePath: 'my-second-blog',
+        /**
+         * Chemin d'accès aux données sur le système de fichiers par rapport au répertoire du site.
+         */
+        path: './my-second-blog',
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -90,6 +111,7 @@ const config = {
             label: "Projects",
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/my-second-blog', label: 'blog-THP', position: 'left' },
           {
             href: "https://github.com/thp-lab",
             label: "GitHub",
