@@ -1,8 +1,8 @@
----
 slug: Introduction-to-Intuition
 title: Introduction to Intuition
 authors: [Zealr, Mcdp]
 tags: [intuition, thp-lab]
+
 ---
 
 <!-- for some reason without this first empty title the one under doesn't show up -->
@@ -39,14 +39,38 @@ We've got two main objectives for this project:
 
 ### Nested Triples relationships Experimentations
 
-1. **Make Triplets related to each other** 🔗  
+1. **Make Triples related to each other** 🔗  
    For example: _(Sacha – has completed –(Fullstack (spring- 2024 – session) (of- THP- Bootcamp))_  
-   You can see that several Triplets are linked, creating deeper connections and cariing more semantic from one Triple.
+   You can see that several Triples are linked, creating deeper connections and cariing more semantic from one Triple.
 
-2. **See it happen on a graph** 📊  
-   When you have a list of Atoms, you can apply a filter and see your main subject in the middle with its relations around it. This way, you can access a vast network of information starting from a single point.
+2. **Visual experiments on a graph** 📊  
+   Depending on its context and the data pointed, a user might have different need. For example show the list of the favorite books from within its close friens.
+
+   We are thinking about options to :
+
+   - apply filters
+   - switch to different view mode ( 2D/3D/VR)
+   - switch to differents grouping feature (list, triples, nested triples, ...)
+   - allow for a quick change of perspective (main subject in the middle with its relations around it). This way, you can access a vast network of information starting from a single point.
 
 ### Create a recommendation Dapp making use of nested Triples
+
+We want to provide an easy to use Dapp that allows users to :
+
+- Create claims about themselves.
+- Ask recomendations to their peers by specifing their intereset.
+- Make recommendations and endorsement to others.
+
+```mermaid
+flowchart LR
+    subgraph Input[Free Input Field]
+        Placeholder[Give Context,Skills Involved,...]
+    end
+    AI[AI Assistant]
+    Triples[Propositions of  Triples/Nested Triples]
+    Input --> AI
+    AI --> Triples
+```
 
 ---
 
@@ -61,48 +85,44 @@ flowchart LR;
    A(Rails Mock API ) <--Read Data -->B(Graph Vizualization);
 ```
 
-- Use a mock list of students managed by a Rails API.
-- Push this data to a decentralized graph app to start testing Triplets.
+- [x] Create a mock list of nested Triples (student, school, skills,session) powered by a Rails API.
+- [x] Create a React App Graph Vizualization to display the data from the Rails API.
 
-#### Step 2: Bulk Atom creation 📑
-
-```mermaid
-flowchart LR;
-   A(Rails Mock API ) <--Read Data -->B(Graph Vizualization);
-```
+#### Step 2: Bulk Triples creation 📑
 
 ```mermaid
-
-flowchart LR
-subgraph "Rails Mock API"
-  a("Seed") -- "Populate" --> b{{"DataBase"}}
-   B("DataBase") --> C{{"`API`"}}
-   B("DataBase") --> D{{"`CSV`"}}
-end
-subgraph "Intuition DataPopulator"
-  c("`The **cat**
-  in the hat`") -- "`Bold **edge label**`" --> d("The dog in the hog")
-end
-"CSV" -->"Intuition DataPopulator"
+flowchart TD
+    subgraph RailsAPI[Rails Mock API]
+        Seed[Seed] --> DB[(Database)]
+        DB --> API[API Endpoint]
+        DB --> CSV[CSV Export]
+    end
+    subgraph IntuitionDP[Intuition]
+        DP[Data Populator]
+        API_INT[Intuition API]
+    end
+    BC[(Blockchain)]
+    GraphViz(Graph Vizualization)
+    CSV --> DP
+    DP -->|Create Atoms and Triple| BC
+    API_INT -->|Read and Index Data| BC
+    GraphViz -->|Read Data| API_INT
 ```
 
-- Convert the mock data into a CSV file.
-- Use Intuition's **Data Populator** to massively create Atoms of our students.
-- Explore possibilities for creating Triplets instead of Atoms using the Data Populator.
-
-#### Step 3: Subgraph implementation 🖇️
-
-- Create the **subgraph** and integrate it, allowing data to display in the DApp.
+- [x] Add a view to the Mock API to quiclky add new Triples or nested Triples
+- [x] Allow the Graph vizualization to switch between the Rails API and the Intuition API.
+- [ ] Generate a CSV file from the mocked data (Atom + Triples)
+- [ ] PR on Intuition's **Data Populator** : add feature to bulk create Triple.
 
 #### Step 4: Real data integration 🧑‍🎓
 
-- Integrate real THP student data into Intuition.
+- [ ] Push our real school data (student, diplomas,sessions) into the Intuition protocol.
 
 ### Create a recommendation Dapp making use of nested Triples
 
 ---
 
-## Components 🛠️
+## Components 🛠
 
 ### 1. Mock Rails API 🛡️
 
@@ -112,7 +132,7 @@ Features:
 - **Database seeds** to bootstrap data for a school, its students, and their relations.
 - API to show a graph and visualize data.
 - CSV file generation for Intuition's Data Populator.
-- Add a **console** to create new Triplets directly for faster testing.
+- Add a **console** to create new Triples directly for faster testing.
 
 ### 2. Data Populator ⚙️
 
