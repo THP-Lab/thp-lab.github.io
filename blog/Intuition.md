@@ -1,8 +1,8 @@
-slug: Introduction-to-Intuition
-title: Introduction to Intuition
+---
+slug: hacking-around-intuition-accelerating-ownership-of-trusted-networks
+title: "Hacking Around Intuition: Accelerating Ownership of Trusted Networks"
 authors: [Zealr, Mcdp]
 tags: [intuition, thp-lab]
-
 ---
 
 <!-- for some reason without this first empty title the one under doesn't show up -->
@@ -40,10 +40,11 @@ We've got two main objectives for this project:
 ### Nested Triples relationships Experimentations
 
 1. **Make Triples related to each other** 🔗  
-   For example: _(Sacha – has completed –(Fullstack (spring- 2024 – session) (of- THP- Bootcamp))_  
+   For example: _(Sacha – has completed –(Fullstack (spring- 2024 – session) (of- THP- Bootcamp))_
+
    You can see that several Triples are linked, creating deeper connections and cariing more semantic from one Triple.
 
-2. **Visual experiments on a graph** 📊  
+2. **Visual experiments on a graph** 📊
    Depending on its context and the data pointed, a user might have different need. For example show the list of the favorite books from within its close friens.
 
    We are thinking about options to :
@@ -112,11 +113,12 @@ flowchart TD
 - [x] Add a view to the Mock API to quiclky add new Triples or nested Triples
 - [x] Allow the Graph vizualization to switch between the Rails API and the Intuition API.
 - [ ] Generate a CSV file from the mocked data (Atom + Triples)
-- [ ] PR on Intuition's **Data Populator** : add feature to bulk create Triple.
+- [ ] PR on - [Intuition's **Data Populator**](https://tech.docs.intuition.systems/populator)
+      : add feature to bulk create Triple.
 
 #### Step 4: Real data integration 🧑‍🎓
 
-- [ ] Push our real school data (student, diplomas,sessions) into the Intuition protocol.
+- [ ] Push our school data (student, diplomas,sessions) into the Intuition protocol.
 
 ### Create a recommendation Dapp making use of nested Triples
 
@@ -126,21 +128,23 @@ flowchart TD
 
 ### 1. Mock Rails API 🛡️
 
-This component will be the basis for initial tests.  
+The - [Rails Mock API](https://github.com/THP-Lab/rails-mock-api) will be the basis for initial tests.  
 Features:
 
 - **Database seeds** to bootstrap data for a school, its students, and their relations.
 - API to show a graph and visualize data.
-- CSV file generation for Intuition's Data Populator.
+- CSV file generation for [Intuition's **Data Populator**](https://tech.docs.intuition.systems/populator)
+  .
 - Add a **console** to create new Triples directly for faster testing.
 
 ### 2. Data Populator ⚙️
 
-We aim to enhance the **Data Populator** by enabling it to create **Triples**, not just Atoms.
+We aim to enhance the [Intuition's **Data Populator**](https://tech.docs.intuition.systems/populator)
+by enabling it to create **Triples**, not just Atoms.
 
-### 3. Visualization Graph (React) 📈
+### 3. Intuition Graph (React) 📈
 
-This graph will help visualize **Intuition data**, connected either to the Rails API or Intuition's SubGraph.
+This [Intuition Graph](https://github.com/THP-Lab/intuition-graph) will help visualize **Intuition data**, connected either to the Rails Mock API or Intuition's SubGraph.
 
 - Experiment by changing the main node to explore complex relationships.
 - Support 2D, 3D views, lists, and more.
@@ -163,9 +167,11 @@ Our backend will involve an **AI assistant** to create meaningful recommendation
 
 ## Project Impact 📦
 
-This project is **Open Source** 👐, so anyone is free to contribute. Once completed, we hope anyone can use this platform to create their own data.
+All the component of this project are **Open Source** 👐 under the [Github Org THP Lab](https://github.com/THP-Lab), so anyone is free to contribute.
 
-One application we'd like to implement is for our school:
+Once completed, we hope some of our research and development could be used by to create and own their data.
+
+One direct application we'd like to implement is for our school, [The Hacking Project](https://www.thehackingproject.org):
 
 - A way to deliver attestations to students validating their skills.
 - Other students or collaborators can **validate claims**, giving them even more credibility. 🛠️
