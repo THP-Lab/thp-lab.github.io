@@ -5,8 +5,8 @@ import {
   useQueryString,
   useQueryStringList,
 } from "@docusaurus/theme-common";
-import type { TagType } from "../../data/users";
-
+import type { TagType, User } from "../../data/users";
+import { sortedUsers } from "../../data/users";
 
 export function useSearchName() {
   return useQueryString("name");

@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Showdown from '../pages/showcase/index';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -28,7 +28,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <Showdown />
       </main>
     </Layout>
   );
