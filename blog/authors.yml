@@ -1,21 +1,31 @@
 Zealr:
   name: Thomas Bobichon
-  title: Junior developper fullstack
+  title: Junior fullstack developer
   url: https://github.com/ZealRa
   image_url: https://avatars.githubusercontent.com/u/165075472?v=4
   page: true
   socials:
-    linkedin: Thomas Bobichon
+    linkedin: thomas-bobichon-824b65300
     github: ZealRa
 
 Mcdp:
   name: Sacha Godel
-  title: Junior developer fullstack
+  title: Junior fullstack developer
   url: https://github.com/MacDuPain
   image_url: https://avatars.githubusercontent.com/u/164226646?v=4
   page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sacha-godel-articles'
+    permalink: "/all-sacha-godel-articles"
   socials:
-    linkedin: Sacha Godel
+    linkedin: sacha-godel-862a2a300
     github: MacDuPain
+
+Zet:
+  name: Jeremie Olivier
+  title: Senior fullstack developer
+  url: https://github.com/jeremie-olivier
+  image_url: https://avatars.githubusercontent.com/u/3015341?v=4
+  page: true
+  socials:
+    linkedin: jeremie-olivier
+    github: jeremie-olivier

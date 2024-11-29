@@ -37,6 +37,11 @@ const config = {
     locales: ["en"],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
+
   presets: [
     [
       "classic",
@@ -46,23 +51,21 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/THP-Lab/thp-lab.github.io/tree/master",
+          editUrl: "https://github.com/THP-Lab/thp-lab.github.io/tree/master",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/THP-Lab/thp-lab.github.io/tree/master',
+          editUrl: "https://github.com/THP-Lab/thp-lab.github.io/tree/master",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -73,21 +76,21 @@ const config = {
 
   plugins: [
     [
-      '@docusaurus/plugin-content-blog',
+      "@docusaurus/plugin-content-blog",
       {
         /**
          * Nécessaire pour tout plugin multi-instance
          */
-        id: 'second-blog',
+        id: "second-blog",
         /**
          * Route URL pour la section blog de votre site.
          * *NE PAS* inclure de slash à la fin.
          */
-        routeBasePath: 'my-second-blog',
+        routeBasePath: "my-second-blog",
         /**
          * Chemin d'accès aux données sur le système de fichiers par rapport au répertoire du site.
          */
-        path: './my-second-blog',
+        path: "./my-second-blog",
       },
     ],
   ],
@@ -110,8 +113,8 @@ const config = {
             position: "left",
             label: "Projects",
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/my-second-blog', label: 'blog-THP', position: 'left' },
+          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/my-second-blog", label: "blog-THP", position: "left" },
           {
             href: "https://github.com/thp-lab",
             label: "GitHub",
@@ -148,8 +151,8 @@ const config = {
             title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
                 label: "GitHub",
