@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+intuition:
+  label: Intuition
+  permalink: /intuition
+  description: information network using Base blockchain
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+projet:
+  label: Projet
+  permalink: /projet
+  description: projet de THP-lab
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+information:
+  label: Information
+  permalink: /information
+  description: article informatif
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+thp:
+  label: THP
+  permalink: /thp
+  description: école The Hacking Project
+
+thp-lab:
+  label: THP-lab
+  permalink: /thp-lab
+  description: Organisation travaillant sur des projets Open-Source
