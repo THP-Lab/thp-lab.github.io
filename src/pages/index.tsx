@@ -8,8 +8,8 @@ import ShowcaseCards from "./showcase/_componants/ShowcaseCards";
 import ShowcaseFilters from "./showcase/_componants/ShowcaseFilters";
 
 // Remplacement de translate par du texte statique
-const TITLE = "Docusaurus Site Showcase";
-const DESCRIPTION = "List of websites people are building with Docusaurus";
+const TITLE = "THP-Lab projects showcase";
+const DESCRIPTION = "List of projects people from THP-lab are working on";
 
 function ShowcaseHeader() {
   return (
