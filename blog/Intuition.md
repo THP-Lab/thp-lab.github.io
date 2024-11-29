@@ -5,142 +5,107 @@ authors: [Zealr, Mcdp]
 tags: [intuition, thp-lab]
 ---
 
-# Introduction
+# Introduction 🚀
 
-## About us
+### About us 👨‍💻👩‍💻
 
-We’re a team of 5 developers in training from The Hacking Project, a Bootcamp school in France. The team is composed of:
+We’re a team of 5 developers in training from **The Hacking Project**, a Bootcamp school in France. The team is composed of **Sacha Godel**, **Thibault Lenormand**, **Alexandre Tedesco**, and **Thomas Bobichon**.  
+This project is important to us, as it is the final project of our training which will validate our diploma! 🎓  
+With us, there’s **Jeremie**, aka **Zet**, who’s advising us, as he is really familiar with Web3 and cryptocurrencies. ✨
 
-- **Sacha Godel**
-- **Thibault Lenormand**
-- **Alexandre Tedesco**
-- **Thomas Bobichon**
+We contacted the team working on **Intuition**, who are building a platform where you can create information on the **RDF model**, which you can find [here](https://www.w3.org/RDF/).  
+On Intuition, you create an **Atom** in which you can stock any piece of information. For example, I can create an identity for myself and use it to make claims about me. When you link Atoms together by using one as the subject, a predicate, and an object, you get a **Triple**.
 
-This project is important to us, as it is the final project of our training which will validate our diploma!
+A simple example would be:  
+_(Elon Musk) – (is CEO of) – (Tesla)_.  
+With this, you can create claims and a real network of information. 🌐
 
-With us there’s **Jeremie**, aka Zet, who’s advising us, as he is really familiar with Web3 and cryptocurrencies.
-
-We contacted the team working on Intuition, who are working on a platform where you can create information on the RDF model, which you can find [here](https://www.w3.org/RDF/).
-
-On Intuition, you create an **Atom** in which you can stock any piece of information. For example, I can create an identity for myself, and use it to make claims about me.
-
-When you link Atoms together, by using one as the subject, a predicate, and an object, you get a **Triple**. An easy example to show this would be:  
-_(Elon Musk) – (is CEO of) – (Tesla)_.
-
-With this, you can create claims and build a real network of information.
-
-Intuition is using the Base Blockchain, which guarantees that every piece of information is immutable and accessible to everyone thanks to the history of transactions.
+**Intuition** uses the **Base Blockchain**, which guarantees that every piece of information is immutable and accessible to everyone, thanks to the history of transactions.
 
 ---
 
-# Objectives
+# Objectives 🎯
 
-We’ve got two objectives in this project:
+We’ve got two main objectives for this project:
 
-1. **Make Triplets related to each other**  
-   Example:  
-   _(Sacha – has completed – (Fullstack (spring-2024 – session) (of – THP – Bootcamp)))_  
-   Several Triplets are put into one, linking Sacha to all of these statements, allowing for a deeper level of connections and information, starting from one Atom.
+1. **Make Triplets related to each other** 🔗  
+   For example: _(Sacha – has completed –(Fullstack (spring- 2024 – session) (of- THP- Bootcamp))_  
+   You can see that several Triplets are linked, creating deeper connections and richer information starting from one Atom.
 
-2. **See it happen on a graph**  
-   When you’ve got a list of Atoms, you can apply filters and see your main subject in the middle with its relations around it. This allows quick access to a huge list of information starting from a precise point.
-
----
-
-# Delivery
-
-We’re making this project **Open Source**, so anyone is free to help and/or contribute to this project.
-
-Once done, we hope anyone who wants to create their own data will be able to use it.
-
-One feature we’d like to implement is for our school: a way to deliver attestations to students to validate skills or abilities on demand. These attestations can be validated by other students and collaborators, giving them more credibility.
+2. **See it happen on a graph** 📊  
+   When you have a list of Atoms, you can apply a filter and see your main subject in the middle with its relations around it. This way, you can access a vast network of information starting from a single point.
 
 ---
 
-# Roadmap
+# Delivery 📦
 
-## Steps to achieve our objectives
+This project is **Open Source** 👐, so anyone is free to contribute. Once completed, we hope anyone can use this platform to create their own data.
 
-### Step 1: Experiments and improvements of existing tools to concatenate Triples
+One application we’d like to implement is for our school:
+
+- A way to deliver attestations to students validating their skills.
+- Other students or collaborators can **validate claims**, giving them even more credibility. 🛠️
+
+---
+
+# Roadmap 🛣️
+
+## Step 1: Experiments and improvements 🔍
 
 - Use a mock list of students managed by a Rails API.
 - Push this data to a decentralized graph app to start testing Triplets.
 
-### Step 2: Mass creation of Atoms
+## Step 2: Bulk Atom creation 📑
 
 - Convert the mock data into a CSV file.
-- Use Intuition’s Data Populator to massively create Atoms of our students.
-- Start using the Smart Contract on the Sepolia Blockchain.
-- Explore the possibility of creating Triplets instead of just Atoms with the Data Populator.
+- Use Intuition’s **Data Populator** to massively create Atoms of our students.
+- Explore possibilities for creating Triplets instead of Atoms using the Data Populator.
 
-### Step 3: Switch to our Smart Contract
+## Step 3: Subgraph implementation 🖇️
 
-- Replace the Sepolia Smart Contract with ours.
-- Create the subgraph and make it work, allowing data to be shown in the DApp.
+- Create the **subgraph** and integrate it, allowing data to display in the DApp.
 
-### Step 4: Integrate real data from THP students
+## Step 4: Real data integration 🧑‍🎓
 
-- Implement actual THP student data into Intuition.
-- Create an assistant for recommendations, powered by AI.
+- Integrate real THP student data into Intuition.
 
 ---
 
-# Components
+# Components 🛠️
 
-## Mock Rails API
+### 1. Mock Rails API 🛡️
 
-This component will be the basis of our tests at the beginning.
+This component will be the basis for initial tests.  
+Features:
 
-### Features:
+- **Database seeds** to bootstrap data for a school, its students, and their relations.
+- API to show a graph and visualize data.
+- CSV file generation for Intuition’s Data Populator.
+- Add a **console** to create new Triplets directly for faster testing.
 
-- **Database Seeds**: Bootstrap data related to a school, its students, and the relations between them.
-- **API for Graphs**: Provide an API to show a graph and visualize the data. The return data will mimic Intuition’s return.
-- **CSV Export**: Produce CSV files for use with Intuition’s Data Populator.
-- **Console for Triplets**: Allow direct creation of new Triples for faster testing.
+### 2. Data Populator ⚙️
 
----
+We aim to enhance the **Data Populator** by enabling it to create **Triples**, not just Atoms.
 
-## Data Populator
+### 3. Visualization Graph (React) 📈
 
-We aim to improve the Data Populator by adding the ability to create Triplets, similar to how Atoms are currently created in large numbers.
+This graph will help visualize **Intuition data**, connected either to the Rails API or Intuition’s SubGraph.
 
----
-
-## Visualization Graph (React)
-
-The graph helps visualize Intuition data. We plan to connect it to either our Rails API or Intuition’s SubGraph.
-
-### Goals:
-
-- Explore different visualization modes:
-  - 2D view
-  - 3D view
-  - List view
-- Experiment by changing the main node to better understand complex relationships.
+- Experiment by changing the main node to explore complex relationships.
+- Support 2D, 3D views, lists, and more.
 
 ---
 
-## Assistant
+# Assistant 🤖
 
-### Users:
+### User who wants a recommendation:
 
-#### 1. User requesting a recommendation
+1. Fill out a text field with details about the recommendation or attestation.
+2. Create the attestation and send it to others for validation.
 
-- Fill in a text field with as much context as possible.
-- The backend will use AI to generate the best way to organize Triplets for a meaningful recommendation.
+### User who wants to give a recommendation:
 
-#### 2. User validating a recommendation
+1. Validate another user’s request.
+2. Deliver the recommendation.
 
-- Validate another user’s request, adding credibility to the recommendation.
-
-The process is simple: once the first user makes the request, the backend generates a recommendation with AI. Other users can validate it to increase its credibility.
-
----
-
-# Conclusion
-
-This project is an opportunity to explore Web3 and blockchain-related technologies.
-
-We aim to enable students and professionals to create rich, reliable data networks.
-
-Thank you for your interest! 🚀
+Our backend will involve an **AI assistant** to create meaningful recommendations by finding the best ways to combine Triples. Other students can validate these claims to enhance credibility. 🌟
