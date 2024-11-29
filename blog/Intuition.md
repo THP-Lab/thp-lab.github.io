@@ -1,7 +1,7 @@
 ---
 slug: hacking-around-intuition-accelerating-ownership-of-trusted-networks
 title: "Hacking Around Intuition: Accelerating Ownership of Trusted Networks"
-authors: [Zealr, Mcdp]
+authors: [Zealr, Mcdp, Zet]
 tags: [intuition, thp-lab]
 ---
 
@@ -13,7 +13,7 @@ tags: [intuition, thp-lab]
 
 We're a team of 5 developers in training from **The Hacking Project**, a Bootcamp school in France. The team is composed of **Sacha Godel**, **Thibault Lenormand**, **Alexandre Tedesco**, and **Thomas Bobichon**.  
 This project is important to us, as it is the final project of our training which will validate our diploma! 🎓  
-With us, there's **Jeremie**, aka **Zet**, who's advising us, as he is really familiar with Web3. ✨
+With us, there's **Jeremie**, aka **Zet**, who's advising us, as he is really familiar with Web3 and decentralized reputation. ✨
 
 ### Our project : Hacking around Intuition 👨‍💻👩‍💻
 
@@ -42,16 +42,16 @@ We've got two main objectives for this project:
 1. **Make Triples related to each other** 🔗  
    For example: _(Sacha – has completed –(Fullstack (spring- 2024 – session) (of- THP- Bootcamp))_
 
-   You can see that several Triples are linked, creating deeper connections and cariing more semantic from one Triple.
+   You can see that several Triples are linked, creating deeper connections and carrying more semantic from one Triple.
 
 2. **Visual experiments on a graph** 📊
-   Depending on its context and the data pointed, a user might have different need. For example show the list of the favorite books from within its close friens.
+   Depending on its context and the data pointed, a user might have different needs. For example show the list of the favorite books from within its close network.
 
    We are thinking about options to :
 
    - apply filters
-   - switch to different view mode ( 2D/3D/VR)
-   - switch to differents grouping feature (list, triples, nested triples, ...)
+   - switch to different view modes ( 2D/3D/VR)
+   - switch to different grouping features (list, triples, nested triples, ...)
    - allow for a quick change of perspective (main subject in the middle with its relations around it). This way, you can access a vast network of information starting from a single point.
 
 ### Create a recommendation Dapp making use of nested Triples
@@ -59,8 +59,8 @@ We've got two main objectives for this project:
 We want to provide an easy to use Dapp that allows users to :
 
 - Create claims about themselves.
-- Ask recomendations to their peers by specifing their intereset.
-- Make recommendations and endorsement to others.
+- Ask recommendations to their peers by specifying their interests.
+- Make recommendations and endorsements to others.
 
 ```mermaid
 flowchart LR
@@ -83,11 +83,11 @@ flowchart LR
 
 ```mermaid
 flowchart LR;
-   A(Rails Mock API ) <--Read Data -->B(Graph Vizualization);
+   A(Rails Mock API ) <--Read Data -->B(Graph Visualization);
 ```
 
 - [x] Create a mock list of nested Triples (student, school, skills,session) powered by a Rails API.
-- [x] Create a React App Graph Vizualization to display the data from the Rails API.
+- [x] Create a React App Graph Visualization to display the data from the Rails API.
 
 #### Step 2: Bulk Triples creation 📑
 
@@ -103,15 +103,15 @@ flowchart TD
         API_INT[Intuition API]
     end
     BC[(Blockchain)]
-    GraphViz(Graph Vizualization)
+    GraphViz(Graph Visualization)
     CSV --> DP
     DP -->|Create Atoms and Triple| BC
     API_INT -->|Read and Index Data| BC
     GraphViz -->|Read Data| API_INT
 ```
 
-- [x] Add a view to the Mock API to quiclky add new Triples or nested Triples
-- [x] Allow the Graph vizualization to switch between the Rails API and the Intuition API.
+- [x] Add a view to the Mock API to quickly add new Triples or nested Triples
+- [x] Allow the Graph visualization to switch between the Rails API and the Intuition API.
 - [ ] Generate a CSV file from the mocked data (Atom + Triples)
 - [ ] PR on - [Intuition's **Data Populator**](https://tech.docs.intuition.systems/populator)
       : add feature to bulk create Triple.
@@ -167,9 +167,9 @@ Our backend will involve an **AI assistant** to create meaningful recommendation
 
 ## Project Impact 📦
 
-All the component of this project are **Open Source** 👐 under the [Github Org THP Lab](https://github.com/THP-Lab), so anyone is free to contribute.
+All the components of this project are **Open Source** 👐 under the [Github Org THP Lab](https://github.com/THP-Lab), so anyone is free to contribute.
 
-Once completed, we hope some of our research and development could be used by to create and own their data.
+Once completed, we hope some of our research and development could be used by others to create and own their data.
 
 One direct application we'd like to implement is for our school, [The Hacking Project](https://www.thehackingproject.org):
 
