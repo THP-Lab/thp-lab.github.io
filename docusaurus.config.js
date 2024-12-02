@@ -34,7 +34,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "fr"],
   },
 
   presets: [
@@ -113,9 +113,13 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/my-second-blog', label: 'blog-THP', position: 'left' },
           {
-            href: "https://github.com/thp-lab",
+            to: "https://github.com/thp-lab",
             label: "GitHub",
             position: "right",
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },
