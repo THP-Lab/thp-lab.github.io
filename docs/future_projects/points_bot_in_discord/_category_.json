@@ -1,0 +1,8 @@
+{
+    "label": "Points Bot in Discord",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "Points Bot in Discord is a bot that makes distribution of points or tokens possible directly in Discord. These docs serve as a reference guide to connect our bot to your discord community."
+    }
+}
