@@ -8,7 +8,7 @@ export default function ShowcaseSearchBar(): ReactNode {
   return (
     <div className={styles.searchBar}>
       <input
-        placeholder="Search for site name..." // Texte statique en remplacement de translate
+        placeholder="Chercher un projet..."
         value={searchName}
         onInput={(e) => {
           setSearchName(e.currentTarget.value);

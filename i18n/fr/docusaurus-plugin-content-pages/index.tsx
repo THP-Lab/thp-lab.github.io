@@ -4,12 +4,12 @@ import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import Translate, {translate} from '@docusaurus/Translate';
 
-import ShowcaseSearchBar from "./showcase/_componants/ShowcaseSearchBar";
-import ShowcaseCards from "./showcase/_componants/ShowcaseCards";
-import ShowcaseFilters from "./showcase/_componants/ShowcaseFilters";
+import ShowcaseSearchBar from "../../../src/pages/showcase/_componants/ShowcaseSearchBar";
+import ShowcaseCards from "../../../src/pages/showcase/_componants/ShowcaseCards";
+import ShowcaseFilters from "../../../src/pages/showcase/_componants/ShowcaseFilters";
 
 const TITLE = translate({message: 'THP-Lab showcase'});
-const DESCRIPTION = translate({message: 'List of projects people from THP-Lab are working on',});
+const DESCRIPTION = translate({message: 'Liste des projets sur lesquels THP-Lab travaille',});
 
 function ShowcaseHeader() {
   return (

@@ -1,0 +1,24 @@
+intuition:
+  label: Intuition
+  permalink: /intuition
+  description: information network using Base blockchain
+
+projet:
+  label: Projet
+  permalink: /projet
+  description: projet de THP-lab
+
+information:
+  label: Information
+  permalink: /information
+  description: article informatif
+
+thp:
+  label: THP
+  permalink: /thp
+  description: école The Hacking Project
+
+thp-lab:
+  label: THP-lab
+  permalink: /thp-lab
+  description: Organisation travaillant sur des projets Open-Source

@@ -9,7 +9,7 @@ export default function ClearAllButton(): ReactNode {
             className="button button--outline button--primary"
             type="button"
             onClick={() => clearQueryString()}>
-            Clear All
+            Supprimer les filtres
         </button>
     );
 }
