@@ -2,9 +2,10 @@ import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import Translate from "@docusaurus/Translate";
-import { Tags, TagList, type TagType, type User } from "../../../../data/users";
+import { Tags, TagList, type TagType, type Project } from "../../../../data/projects";
 import { sortBy } from "../../../../utils/jsUtils";
 import Heading from "@theme/Heading";
+import Image from "@theme/IdealImage";
 import FavoriteIcon from "../FavoriteIcon";
 import styles from "./styles.module.css";
 
@@ -42,36 +43,36 @@ function ShowcaseCardTag({ tags }: { tags: TagType[] }) {
   );
 }
 
-function getCardImage(user: User): string {
+function getCardImage(project: Project): string {
   return (
-    user.preview ??
+    project.preview ??
     // TODO make it configurable
     `https://slorber-api-screenshot.netlify.app/${encodeURIComponent(
-      user.website
+      project.website
     )}/showcase`
   );
 }
 
-function ShowcaseCard({ user }: { user: User }) {
-  const image = getCardImage(user);
+function ShowcaseCard({ project }: { project: Project }) {
+  const image = getCardImage(project);
   return (
-    <li key={user.title} className="card shadow--md">
+    <li key={project.title} className="card shadow--md">
       <div className={clsx("card__image", styles.showcaseCardImage)}>
-        <Image img={image} alt={user.title} />
+      <Image img={image} alt={project.title} />
       </div>
       <div className="card__body">
         <div className={clsx(styles.showcaseCardHeader)}>
           <Heading as="h4" className={styles.showcaseCardTitle}>
-            <Link href={user.website} className={styles.showcaseCardLink}>
-              {user.title}
+            <Link href={project.website} className={styles.showcaseCardLink}>
+              {project.title}
             </Link>
           </Heading>
-          {user.tags.includes("favorite") && (
+          {project.tags.includes("favorite") && (
             <FavoriteIcon size="medium" style={{ marginRight: "0.25rem" }} />
           )}
-          {user.source && (
+          {project.source && (
             <Link
-              href={user.source}
+              href={project.source}
               className={clsx(
                 "button button--secondary button--sm",
                 styles.showcaseCardSrcBtn
@@ -81,10 +82,10 @@ function ShowcaseCard({ user }: { user: User }) {
             </Link>
           )}
         </div>
-        <p className={styles.showcaseCardBody}>{user.description}</p>
+        <p className={styles.showcaseCardBody}>{project.description}</p>
       </div>
       <ul className={clsx("card__footer", styles.cardFooter)}>
-        <ShowcaseCardTag tags={user.tags} />
+        <ShowcaseCardTag tags={project.tags} />
       </ul>
     </li>
   );

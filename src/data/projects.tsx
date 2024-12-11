@@ -51,14 +51,26 @@ export type TagType =
 
 // Add sites to this list
 // prettier-ignore
-const Users: User[] = [
-  /*
-  Pro Tip: add your site in alphabetical order.
-  Appending your site here (at the end) is more likely to produce Git conflicts.
-   */
+const Projects: Project[] = [
+  {
+    title: 'Intuition',
+    description: 'Local, reliable, fast and private Audio and IoT gate.',
+    preview: 'https://pbs.twimg.com/profile_images/1686585471235682305/a1Ll5kow_400x400.jpg',
+    website: '/docs/intuition',
+    source: 'https://github.com/sviete/AIS-WWW',
+    tags: ['opensource'],
+  },
+  {
+    title: "Discord bot",
+    description: 'Personal frontend blog for learning',
+    preview: 'https://m.media-amazon.com/images/I/51lpm9SpsJL.png',
+    website: 'https://messiahhh.github.io/blog/',
+    source: 'https://github.com/messiahhh/blog',
+    tags: ['opensource'],
+  },
 ];
 
-export type User = {
+export type Project = {
   title: string;
   description: string;
   preview: string | null; // null = use our serverless screenshot service
@@ -173,13 +185,13 @@ export const Tags: { [type in TagType]: Tag } = {
 };
 
 export const TagList = Object.keys(Tags) as TagType[];
-function sortUsers() {
-  let result = Users;
+function sortProjects() {
+  let result = Projects;
   // Sort by site name
-  result = sortBy(result, (user) => user.title.toLowerCase());
+  result = sortBy(result, (Project) => Project.title.toLowerCase());
   // Sort by favorite tag, favorites first
-  result = sortBy(result, (user) => !user.tags.includes("favorite"));
+  result = sortBy(result, (Project) => !Project.tags.includes("favorite"));
   return result;
 }
 
-export const sortedUsers = sortUsers();
+export const sortedProjects = sortProjects();

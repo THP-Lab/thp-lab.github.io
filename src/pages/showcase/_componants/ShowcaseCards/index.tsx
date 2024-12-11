@@ -2,26 +2,26 @@ import React from 'react'
 import type { ReactNode } from "react";
 import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
-import { sortedUsers, type User } from "../../../../data/users";
+import { sortedProjects, type Project } from "../../../../data/projects";
 import Heading from "@theme/Heading";
 import FavoriteIcon from "../FavoriteIcon";
 import ShowcaseCard from "../ShowcaseCard";
-import { useFilteredUsers } from "../../utils";
+import { useFilteredProjects } from "../../utils";
 
 import styles from "./styles.module.css";
 
-const favoriteUsers = sortedUsers.filter((user) =>
-  user.tags.includes("favorite")
+const favoriteProjects = sortedProjects.filter((project) =>
+  project.tags.includes("favorite")
 );
 
-const otherUsers = sortedUsers.filter(
-  (user) => !user.tags.includes("favorite")
+const otherProjects = sortedProjects.filter(
+  (project) => !project.tags.includes("favorite")
 );
 
 function HeadingNoResult() {
   return (
     <Heading as="h2">
-      <Translate id="showcase.usersList.noResult">No result</Translate>
+      <Translate id="showcase.projectsList.noResult">No result</Translate>
     </Heading>
   );
 }
@@ -38,18 +38,18 @@ function HeadingFavorites() {
 function HeadingAllSites() {
   return (
     <Heading as="h2">
-      <Translate id="showcase.usersList.allUsers">All sites</Translate>
+      <Translate id="showcase.projectsList.allProjects">All sites</Translate>
     </Heading>
   );
 }
 
-function CardList({ heading, items }: { heading?: ReactNode; items: User[] }) {
+function CardList({ heading, items }: { heading?: ReactNode; items: Project[] }) {
   return (
     <div className="container">
       {heading}
       <ul className={clsx("clean-list", styles.cardList)}>
         {items.map((item) => (
-          <ShowcaseCard key={item.title} user={item} />
+          <ShowcaseCard key={item.title} project={item} />
         ))}
       </ul>
     </div>
@@ -67,25 +67,25 @@ function NoResultSection() {
 }
 
 export default function ShowcaseCards() {
-  const filteredUsers = useFilteredUsers();
+  const filteredProjects = useFilteredProjects();
 
-  if (filteredUsers.length === 0) {
+  if (filteredProjects.length === 0) {
     return <NoResultSection />;
   }
 
   return (
     <section className="margin-top--lg margin-bottom--xl">
-      {filteredUsers.length === sortedUsers.length ? (
+      {filteredProjects.length === sortedProjects.length ? (
         <>
           <div className={styles.showcaseFavorite}>
-            <CardList heading={<HeadingFavorites />} items={favoriteUsers} />
+            <CardList heading={<HeadingFavorites />} items={favoriteProjects} />
           </div>
           <div className="margin-top--lg">
-            <CardList heading={<HeadingAllSites />} items={otherUsers} />
+            <CardList heading={<HeadingAllSites />} items={otherProjects} />
           </div>
         </>
       ) : (
-        <CardList items={filteredUsers} />
+        <CardList items={filteredProjects} />
       )}
     </section>
   );
