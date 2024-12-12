@@ -64,7 +64,7 @@ const Projects: Project[] = [
     title: "Discord bot",
     description: 'Personal frontend blog for learning',
     preview: 'https://www.notebookcheck.biz/fileadmin/Notebooks/News/_nc3/discord.jpeg',
-    website: '/docs/future_projects/points_bot_in_discord/getting-started/intro',
+    website: '/docs/Discord_bot_for_points/getting-started/intro',
     source: '',
     tags: ['opensource'],
   },
