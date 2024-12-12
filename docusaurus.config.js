@@ -114,8 +114,8 @@ const config = {
           src: "img/logo-THP.png",
         },
         items: [
-          { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/my-second-blog', label: 'blog-THP', position: 'left' },
+          { to: '/blog', label: 'THP-lab', position: 'left' },
+          { to: '/my-second-blog', label: 'Blog THP', position: 'left' },
           {
             to: "https://github.com/thp-lab",
             label: "GitHub",
