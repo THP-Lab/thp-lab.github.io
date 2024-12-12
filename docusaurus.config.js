@@ -91,6 +91,16 @@ const config = {
       },
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'intuition',
+        path: './docs/intuition',
+        routeBasePath: 'intuition',
+        sidebarPath: './sidebars.js',
+        // ... other options
+      },
+    ],
+    [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
@@ -108,22 +118,16 @@ const config = {
       // Replace with your project's social card
       image: "img/logo-THP.png",
       navbar: {
-        title: "THP Lab",
+        title: "Accueil",
         logo: {
           alt: "My Site Logo",
           src: "img/logo-THP.png",
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "ProjectSidebar",
-            position: "left",
-            label: "Projects",
-          },
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/my-second-blog', label: 'blog-THP', position: 'left' },
           {
-            href: "https://github.com/thp-lab",
+            to: "https://github.com/thp-lab",
             label: "GitHub",
             position: "right",
           },
@@ -137,7 +141,7 @@ const config = {
             items: [
               {
                 label: "Projects",
-                to: "/docs/showcase",
+                to: "/",
               },
             ],
           },
