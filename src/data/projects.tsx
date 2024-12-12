@@ -18,15 +18,15 @@ export type TagType =
 const Projects: Project[] = [
   {
     title: 'Intuition',
-    description: 'Local, reliable, fast and private Audio and IoT gate.',
+    description: '',
     preview: 'https://pbs.twimg.com/profile_images/1686585471235682305/a1Ll5kow_400x400.jpg',
     website: '/docs/intuition',
     source: 'https://github.com/0xIntuition',
-    tags: ['opensource'],
+    tags: ['opensource', 'favorite'],
   },
   {
     title: "Discord bot",
-    description: 'Personal frontend blog for learning',
+    description: '',
     preview: 'https://www.notebookcheck.biz/fileadmin/Notebooks/News/_nc3/discord.jpeg',
     website: '/docs/Discord_bot_for_points/getting-started/intro',
     source: '',

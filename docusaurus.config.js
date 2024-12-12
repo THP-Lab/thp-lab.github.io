@@ -97,18 +97,6 @@ const config = {
           { to: '/blog', label: 'THP-lab', position: 'left' },
           { to: '/my-second-blog', label: 'Blog THP', position: 'left' },
           {
-            type: 'doc',
-            docId: 'intuition/intuition',
-            position: 'left',
-            label: 'Intuition',
-          },
-          {
-            type: 'doc',
-            docId: 'Discord_bot_for_points/getting-started/intro',
-            position: 'left',
-            label: 'Discord Bot',
-          },
-          {
             to: "https://github.com/thp-lab",
             label: "GitHub",
             position: "right",
