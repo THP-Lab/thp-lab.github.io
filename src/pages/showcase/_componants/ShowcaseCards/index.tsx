@@ -38,7 +38,7 @@ function HeadingFavorites() {
 function HeadingAllSites() {
   return (
     <Heading as="h2">
-      <Translate id="showcase.projectsList.allProjects">All sites</Translate>
+      <Translate id="showcase.projectsList.allProjects">All projects</Translate>
     </Heading>
   );
 }
