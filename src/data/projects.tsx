@@ -25,12 +25,12 @@ const Projects: Project[] = [
     tags: ['opensource', 'favorite'],
   },
   {
-    title: "Discord bot",
+    title: "Discord Points",
     description: '',
     preview: 'https://www.notebookcheck.biz/fileadmin/Notebooks/News/_nc3/discord.jpeg',
     website: '/docs/Discord_bot_for_points/getting-started/intro',
     source: '',
-    tags: ['opensource'],
+    tags: ['opensource', 'favorite'],
   },
 ];
 
@@ -54,7 +54,7 @@ export const Tags: { [type in TagType]: Tag } = {
     label: translate({ message: "Favorite" }),
     description: translate({
       message:
-        "Our favorite Docusaurus sites that you must absolutely check out!",
+        "Our favorite THP Lab Projects that you must absolutely check out!",
       id: "showcase.tag.favorite.description",
     }),
     color: "#e9669e",
@@ -63,7 +63,7 @@ export const Tags: { [type in TagType]: Tag } = {
   opensource: {
     label: translate({ message: "Open-Source" }),
     description: translate({
-      message: "Open-Source Docusaurus sites can be useful for inspiration!",
+      message: "Open-Source THP Lab Projects can be useful for inspiration!",
       id: "showcase.tag.opensource.description",
     }),
     color: "#39ca30",
@@ -72,7 +72,7 @@ export const Tags: { [type in TagType]: Tag } = {
   product: {
     label: translate({ message: "Product" }),
     description: translate({
-      message: "Docusaurus sites associated to a commercial product!",
+      message: "THP Lab Projects associated to a commercial product!",
       id: "showcase.tag.product.description",
     }),
     color: "#dfd545",
@@ -82,7 +82,7 @@ export const Tags: { [type in TagType]: Tag } = {
     label: translate({ message: "Design" }),
     description: translate({
       message:
-        "Beautiful Docusaurus sites, polished and standing out from the initial template!",
+        "Beautiful THP Lab Projects, polished and standing out from the initial template!",
       id: "showcase.tag.design.description",
     }),
     color: "#a44fb7",
@@ -92,7 +92,7 @@ export const Tags: { [type in TagType]: Tag } = {
     label: translate({ message: "I18n" }),
     description: translate({
       message:
-        "Translated Docusaurus sites using the internationalization support with more than 1 locale.",
+        "Translated THP Lab Projects using the internationalization support with more than 1 locale.",
       id: "showcase.tag.i18n.description",
     }),
     color: "#127f82",
@@ -102,7 +102,7 @@ export const Tags: { [type in TagType]: Tag } = {
     label: translate({ message: "Versioning" }),
     description: translate({
       message:
-        "Docusaurus sites using the versioning feature of the docs plugin to manage multiple versions.",
+        "THP Lab Projects using the versioning feature of the docs plugin to manage multiple versions.",
       id: "showcase.tag.versioning.description",
     }),
     color: "#fe6829",
@@ -112,7 +112,7 @@ export const Tags: { [type in TagType]: Tag } = {
     label: translate({ message: "Large" }),
     description: translate({
       message:
-        "Very large Docusaurus sites, including many more pages than the average!",
+        "Very large THP Lab Projects, including many more pages than the average!",
       id: "showcase.tag.large.description",
     }),
     color: "#8c2f00",
@@ -121,7 +121,7 @@ export const Tags: { [type in TagType]: Tag } = {
   meta: {
     label: translate({ message: "Meta" }),
     description: translate({
-      message: "Docusaurus sites of Meta (formerly Facebook) projects",
+      message: "THP Lab Projects of Meta (formerly Facebook) projects",
       id: "showcase.tag.meta.description",
     }),
     color: "#4267b2",
@@ -141,7 +141,7 @@ export const Tags: { [type in TagType]: Tag } = {
     label: translate({ message: "RTL Direction" }),
     description: translate({
       message:
-        "Docusaurus sites using the right-to-left reading direction support.",
+        "THP Lab Projects using the right-to-left reading direction support.",
       id: "showcase.tag.rtl.description",
     }),
     color: "#ffcfc3",
