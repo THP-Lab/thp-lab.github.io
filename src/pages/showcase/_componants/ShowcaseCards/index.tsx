@@ -6,7 +6,7 @@ import { sortedProjects, type Project } from "../../../../data/projects";
 import Heading from "@theme/Heading";
 import FavoriteIcon from "../FavoriteIcon";
 import ShowcaseCard from "../ShowcaseCard";
-import { useFilteredProjects } from "../../utils";
+import { useFilteredProjects } from "../../_utils";
 
 import styles from "./styles.module.css";
 
@@ -38,7 +38,7 @@ function HeadingFavorites() {
 function HeadingAllSites() {
   return (
     <Heading as="h2">
-      <Translate id="showcase.projectsList.allProjects">All sites</Translate>
+      <Translate id="showcase.projectsList.allProjects">All projects</Translate>
     </Heading>
   );
 }

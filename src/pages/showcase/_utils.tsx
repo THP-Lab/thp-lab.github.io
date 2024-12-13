@@ -59,6 +59,8 @@ function filterProjects({
   });
 }
 
+export default '';
+
 export function useFilteredProjects() {
   const [tags] = useTags();
   const [searchName] = useSearchName();
@@ -84,8 +86,8 @@ export function useSiteCountPlural() {
         {
           id: "showcase.filters.resultCount",
           description:
-            'Pluralized label for the number of sites found on the showcase. Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
-          message: "1 site|{sitesCount} sites",
+            'Pluralized label for the number of projects found on the showcase. Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
+          message: "1 project|{sitesCount} projects",
         },
         { sitesCount }
       )
