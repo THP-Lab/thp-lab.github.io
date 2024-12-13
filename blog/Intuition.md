@@ -11,7 +11,7 @@ tags: [intuition, thp-lab]
 
 ### About us 👨‍💻👩‍💻
 
-We're a team of 5 developers in training from **The Hacking Project**, a Bootcamp school in France. The team is composed of **Sacha Godel**, **Thibault Lenormand**, **Alexandre Tedesco**, and **Thomas Bobichon**.  
+We're a team of 5 developers in training from **The Hacking Project**, a Bootcamp school in France. The team is composed of **Sacha Godel**, **Maxime Lodato**, **Thibault Lenormand**, **Alexandre Tedesco**, and **Thomas Bobichon**.  
 This project is important to us, as it is the final project of our training which will validate our diploma! 🎓  
 With us, there's **Jeremie**, aka **Zet**, who's advising us, as he is really familiar with Web3 and decentralized reputation. ✨
 
