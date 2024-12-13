@@ -1,37 +1,18 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import { themes as prismThemes } from "prism-react-renderer";
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "THP Lab",
   tagline: "W3C is cool",
   favicon: "img/favicon.ico",
-
-  // Set the production url of your site here
   url: "https://THP-Lab.github.iom",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "THP-Lab.github.io", // Usually your GitHub org/user name.
-  projectName: "THP-Lab", // Usually your repo name.
+  organizationName: "THP-Lab.github.io",
+  projectName: "THP-Lab",
   trailingSlash: false,
-
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -48,10 +29,25 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/THP-Lab/thp-lab.github.io/tree/master",
+          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: 'docs',
+          sidebarCollapsible: true,
+          sidebarCollapsed: false,
+          // Map sidebars to specific paths
+          async sidebarItemsGenerator({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            // Use appropriate sidebar based on path
+            if (args.item.dirName === 'Discord_bot_for_points') {
+              return 'discordBotSidebar';
+            }
+            if (args.item.dirName === 'intuition') {
+              return 'intuitionSidebar';
+            }
+            return sidebarItems;
+          },
         },
         blog: {
           showReadingTime: true,
@@ -59,13 +55,10 @@ const config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/THP-Lab/thp-lab.github.io/tree/master",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
+          editUrl: 'https://github.com/THP-Lab/thp-lab.github.io/tree/master',
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -78,19 +71,19 @@ const config = {
     [
       "@docusaurus/plugin-content-blog",
       {
-        /**
-         * Nécessaire pour tout plugin multi-instance
-         */
-        id: "second-blog",
-        /**
-         * Route URL pour la section blog de votre site.
-         * *NE PAS* inclure de slash à la fin.
-         */
-        routeBasePath: "my-second-blog",
-        /**
-         * Chemin d'accès aux données sur le système de fichiers par rapport au répertoire du site.
-         */
-        path: "./my-second-blog",
+        id: 'second-blog',
+        routeBasePath: 'my-second-blog',
+        path: './my-second-blog',
+      },
+    ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030,
+        min: 640,
+        steps: 2,
+        disableInDev: false,
       },
     ],
   ],
@@ -98,25 +91,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: "img/logo-THP.png",
       navbar: {
-        title: "THP Lab",
+        title: "Accueil",
         logo: {
           alt: "My Site Logo",
           src: "img/logo-THP.png",
         },
         items: [
+          { to: '/blog', label: 'THP-lab', position: 'left' },
+          { to: '/my-second-blog', label: 'Blog THP', position: 'left' },
           {
-            type: "docSidebar",
-            sidebarId: "ProjectSidebar",
-            position: "left",
-            label: "Projects",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          { to: "/my-second-blog", label: "blog-THP", position: "left" },
-          {
-            href: "https://github.com/thp-lab",
+            to: "https://github.com/thp-lab",
             label: "GitHub",
             position: "right",
           },
@@ -130,7 +116,7 @@ const config = {
             items: [
               {
                 label: "Projects",
-                to: "/docs/showcase",
+                to: "/",
               },
             ],
           },

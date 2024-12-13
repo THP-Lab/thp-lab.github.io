@@ -1,0 +1,20 @@
+.svg {
+   user-select: none;
+   color: #e9669e;
+   width: 1em;
+   height: 1em;
+   display: inline-block;
+   fill: currentColor;
+ }
+ 
+ .small {
+   font-size: 1rem;
+ }
+ 
+ .medium {
+   font-size: 1.25rem;
+ }
+ 
+ .large {
+   font-size: 1.8rem;
+ }
