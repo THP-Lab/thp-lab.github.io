@@ -5,8 +5,8 @@ import React, {
   type ReactElement,
   useId,
 } from "react";
-import type { TagType } from "@site/src/data/users";
-import { useTags } from "../../utils";
+import { TagType } from "../../../../data/projects";
+import { useTags } from "../../_utils";
 
 import styles from "./styles.module.css";
 

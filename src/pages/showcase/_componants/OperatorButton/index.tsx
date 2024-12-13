@@ -1,6 +1,6 @@
-import React, {useId} from 'react';
+import React, { useId } from 'react';
 import clsx from 'clsx';
-import {useOperator} from '../../utils';
+import { useOperator } from '../../_utils';
 
 import styles from './styles.module.css';
 

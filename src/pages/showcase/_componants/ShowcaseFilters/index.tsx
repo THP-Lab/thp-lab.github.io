@@ -8,7 +8,7 @@ import Heading from "@theme/Heading";
 import ShowcaseTagSelect from "../ShowcaseTagSelect";
 import OperatorButton from "../OperatorButton";
 import ClearAllButton from "../ClearAllButton";
-import { useFilteredProjects, useSiteCountPlural } from "../../utils";
+import { useFilteredProjects, useSiteCountPlural } from "../../_utils";
 
 import styles from "./styles.module.css";
 

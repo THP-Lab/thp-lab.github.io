@@ -59,6 +59,8 @@ function filterProjects({
   });
 }
 
+export default '';
+
 export function useFilteredProjects() {
   const [tags] = useTags();
   const [searchName] = useSearchName();
