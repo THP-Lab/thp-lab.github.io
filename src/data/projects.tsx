@@ -32,6 +32,14 @@ const Projects: Project[] = [
     source: '',
     tags: ['opensource', 'favorite'],
   },
+  {
+    title: "Agent",
+    description: '',
+    preview: 'https://i.ibb.co/D9pTTDc/Github.jpg',
+    website: '/docs/agent',
+    source: '',
+    tags: ['opensource', 'favorite'],
+  },
 ];
 
 export type Project = {
