@@ -29,8 +29,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: 'docs',
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "docs",
           sidebarCollapsible: true,
           sidebarCollapsed: false,
           // Map sidebars to specific paths
@@ -40,11 +40,14 @@ const config = {
           }) {
             const sidebarItems = await defaultSidebarItemsGenerator(args);
             // Use appropriate sidebar based on path
-            if (args.item.dirName === 'Discord_bot_for_points') {
-              return 'discordBotSidebar';
+            if (args.item.dirName === "Discord_bot_for_points") {
+              return "discordBotSidebar";
             }
-            if (args.item.dirName === 'intuition') {
-              return 'intuitionSidebar';
+            if (args.item.dirName === "intuition") {
+              return "intuitionSidebar";
+            }
+            if (args.item.dirName === "agent") {
+              return "agentSidebar";
             }
             return sidebarItems;
           },
@@ -55,10 +58,10 @@ const config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          editUrl: 'https://github.com/THP-Lab/thp-lab.github.io/tree/master',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          editUrl: "https://github.com/THP-Lab/thp-lab.github.io/tree/master",
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -71,13 +74,13 @@ const config = {
     [
       "@docusaurus/plugin-content-blog",
       {
-        id: 'second-blog',
-        routeBasePath: 'my-second-blog',
-        path: './my-second-blog',
+        id: "second-blog",
+        routeBasePath: "my-second-blog",
+        path: "./my-second-blog",
       },
     ],
     [
-      '@docusaurus/plugin-ideal-image',
+      "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
         max: 1030,
@@ -99,8 +102,8 @@ const config = {
           src: "img/logo-THP.png",
         },
         items: [
-          { to: '/blog', label: 'THP-lab', position: 'left' },
-          { to: '/my-second-blog', label: 'Blog THP', position: 'left' },
+          { to: "/blog", label: "THP-lab", position: "left" },
+          { to: "/my-second-blog", label: "Blog THP", position: "left" },
           {
             to: "https://github.com/thp-lab",
             label: "GitHub",
@@ -154,7 +157,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },

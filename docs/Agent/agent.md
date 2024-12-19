@@ -1,5 +1,5 @@
 ---
-displayed_sidebar: angentSidebar
+displayed_sidebar: agentSidebar
 ---
 
 # Agent
@@ -9,7 +9,7 @@ Projet de plateforme d'outils communautaire pour Boss Fighters (30 jours)
 ## Introduction
 
 Agent est une plateforme en ligne Open Source visant à faciliter et améliorer l’expérience de jeu Boss Fighters pour les joueurs, streameurs et/ou investisseurs.
-En proposant des outils complémentaires de compréhension et de contenu à la communauté Boss Fighters, elle se concentre sur l'expérience utilisateur de jeu et non l'investissement. Ceci afin d’offrir un panel d’outils à l’ensemble des acteurs de la communauté Boss Fighters. 
+En proposant des outils complémentaires de compréhension et de contenu à la communauté Boss Fighters, elle se concentre sur l'expérience utilisateur de jeu et non l'investissement. Ceci afin d’offrir un panel d’outils à l’ensemble des acteurs de la communauté Boss Fighters.
 Construite pour la communauté et par la communauté via contribution Open Source et/ou feedbacks des joueurs Boss Fighters.
 
 ## Business

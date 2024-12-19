@@ -11,14 +11,14 @@ export type TagType =
   | "large"
   | "meta"
   | "personal"
-  | "rtl";
+  | "Gaming";
 
 // Add sites to this list
 // prettier-ignore
 const Projects: Project[] = [
   {
     title: 'Intuition',
-    description: '',
+    description: 'A set of tools leveraging intuition to experiment with enriched semantics and artificial intelligence, fostering trust and ownership in secure networks',
     preview: 'https://pbs.twimg.com/profile_images/1686585471235682305/a1Ll5kow_400x400.jpg',
     website: '/docs/intuition',
     source: 'https://github.com/0xIntuition',
@@ -26,11 +26,19 @@ const Projects: Project[] = [
   },
   {
     title: "Discord Points",
-    description: '',
+    description: 'Discord bot for managing and tracking points, enabling transfers, balance displays, leaderboards, and server-logged transactions',
     preview: 'https://www.notebookcheck.biz/fileadmin/Notebooks/News/_nc3/discord.jpeg',
     website: '/docs/Discord_bot_for_points/getting-started/intro',
     source: '',
     tags: ['opensource', 'favorite'],
+  },
+  {
+    title: "Agent",
+    description: 'Platform enhancing the Boss Fighters experience with tools built by and for the community',
+    preview: 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1784650/capsule_616x353.jpg?t=1728815393',
+    website: '/docs/Agent',
+    source: '',
+    tags: ['opensource', 'favorite', 'Gaming'],
   },
 ];
 
@@ -137,12 +145,12 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#14cfc3",
   },
 
-  rtl: {
-    label: translate({ message: "RTL Direction" }),
+  Gaming: {
+    label: translate({ message: "Gaming" }),
     description: translate({
       message:
-        "THP Lab Projects using the right-to-left reading direction support.",
-      id: "showcase.tag.rtl.description",
+        "THP Lab Projects in relation with gaming",
+      id: "showcase.tag.gaming.description",
     }),
     color: "#ffcfc3",
   },
