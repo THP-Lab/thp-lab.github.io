@@ -6,6 +6,8 @@ displayed_sidebar: agentSidebar
 
 Projet de plateforme d'outils communautaire pour Boss Fighters (30 jours)
 
+![image](https://github.com/user-attachments/assets/b2483575-4668-40f4-a504-de2a7cf44f00)
+
 ## Introduction
 
 Agent est une plateforme en ligne Open Source visant à faciliter et améliorer l’expérience de jeu Boss Fighters pour les joueurs, streameurs et/ou investisseurs.
@@ -29,3 +31,28 @@ Boss Fighters proposant un jeu accès sur le “Show” le Business “Agent” 
 - Data
 - User Data input/output
 - Twitch App
+- ddd
+
+## MVP (21,75 days)
+
+- My Collection (4 days) - 2d
+- Dashboard (2 days) - 0.125d
+- Daily (2 days) - 1d
+- Monthly (2 days) - 2d
+- Economy Map (0.25 day) - 0.25d
+- Data Lab > Slots (1 days) - 1d
+- Data Lab > Contracts (2 days) - 2d
+- Data Lab > Badges (2 days) - 2d
+- Data Lab > Craft (0.5 days) - 0.5d
+- Data Lab > Player Cycle (2 days) - 2d
+- Farming (2 days) - 2d
+- Leveling (2 days) - 2d
+- Module "Support us" Crypto/Card payment (2 days) - 2d
+
+## DESIGN
+
+https://www.figma.com/proto/Bz7fSHL6RlJj2Lf0RXffje/Openloot-Projects?node-id=60-172&t=9oql3fk3rcCg2zaI-1
+
+## BDD
+
+https://dbdiagram.io/d/Agent-Dashboard-677d51d50231eca7296fcd42
