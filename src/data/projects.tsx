@@ -44,7 +44,7 @@ const Projects: Project[] = [
   {
     title: "Le Circographe",
     description: 'A custom project to manage an association, its members, and events. A frontend-user site and a management application.',
-    preview: null,
+    preview: '/img/circographe/card_view.webp',
     website: '/docs/Circographe/introduction',
     source: 'https://github.com/LeCircographe-asso',
     tags: ['opensource', 'Non-profit association', 'personal', 'favorite'],
