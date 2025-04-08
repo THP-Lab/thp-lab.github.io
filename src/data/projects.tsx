@@ -11,7 +11,8 @@ export type TagType =
   | "large"
   | "meta"
   | "personal"
-  | "Gaming";
+  | "Gaming"
+  | "Non-profit association";
 
 // Add sites to this list
 // prettier-ignore
@@ -39,6 +40,14 @@ const Projects: Project[] = [
     website: '/docs/Agent',
     source: '',
     tags: ['opensource', 'favorite', 'Gaming'],
+  },
+  {
+    title: "Le Circographe",
+    description: 'A custom project to manage an association, its members, and events. A frontend-user site and a management application.',
+    preview: null,
+    website: '/docs/Circographe/introduction',
+    source: 'https://github.com/LeCircographe-asso',
+    tags: ['opensource', 'Non-profit association', 'personal', 'favorite'],
   },
 ];
 
@@ -153,6 +162,15 @@ export const Tags: { [type in TagType]: Tag } = {
       id: "showcase.tag.gaming.description",
     }),
     color: "#ffcfc3",
+  },
+  "Non-profit association": {
+    label: translate({ message: "Non-profit association" }),
+    description: translate({
+      message:
+        "THP Lab Projects related to non-profit associations",
+      id: "showcase.tag.nonprofit.description",
+    }),
+    color: "#8B5CF6",
   },
 };
 
