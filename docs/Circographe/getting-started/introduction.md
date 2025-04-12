@@ -1,30 +1,56 @@
 ---
 sidebar_position: 1
+title: Introduction
 displayed_sidebar: circographeSidebar
 ---
 
+![Le Circographe Logo](../../../static/img/circographe/Le-Circographe-crop.webp)
+
 # Introduction
 
-Let's discover **Circographe** in less than 10 minutes.
+Let's discover **Le Circographe** in less than 5 minutes.
 
-## Welcome to Circographe
+## Welcome to Le Circographe
 
-Circographe is an innovative project that aims to provide a website and management application for associations.
+This is the documentation for Le Circographe, a web application designed to simplify the management of circus associations. The platform consists of two main components:
+
+- A public frontend website for visitors and members
+- An administrative backend for membership and subscription management
+
+## What you'll need
+
+- [Ruby](https://www.ruby-lang.org/en/) version 3.2.5
+- [Rails](https://rubyonrails.org/) version 8.0.2 or above
+- [SQLite 3](https://www.sqlite.org/index.html)
+- [Modern web browser](https://www.google.com/chrome/) (Chrome, Firefox, Safari, or Edge)
+- User account with appropriate permissions
+
+## What can Le Circographe do?
+
+### 1. Member Management 👥
+  Register and manage member profiles with contact details, membership status, and activity history.
+
+### 2. Subscription Tracking 💳
+  Track membership fees, payment history, and subscription renewals.
+
+### 3. Event Management 📅
+  Create, schedule, and manage events, workshops, and performances.
+
+### 4. Resource Allocation 🎪
+  Monitor and allocate equipment and spaces for activities and training.
+
+### 5. Administrative Dashboard 📊
+  Access reports and statistics on membership, activities, and finances.
+
+### 6. Public Web Presence 🌐
+  Showcase your organization, events, and activities to the public through a customizable website.
+
+## Technical Overview
+
+Le Circographe is built with modern web technologies focused on reliability and ease of use. The application uses a responsive design that works across desktop and mobile devices, ensuring administrators can manage their association from anywhere.
+
+The system stores all data securely in a database, with regular backups to prevent data loss. User permissions can be configured to control access to sensitive information and administrative functions.
 
 ## Getting Started
 
-This section will guide you through:
-- Setting up your development environment
-- Understanding the project structure
-- Making your first contribution
-
-## Features Overview
-
-Circographe offers several key features:
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Contributing
-
-We welcome contributions from the community! Check out our contribution guidelines to get started. 
+To begin using Le Circographe, you'll need to set up your organization profile and administrator account. The detailed installation and configuration instructions are available in the Installation Guide section of this documentation.
