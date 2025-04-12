@@ -32,6 +32,23 @@ const sidebars = {
   ],
   intuitionSidebar: ["intuition/intuition"],
   agentSidebar: ["Agent/agent"],
+  circographeSidebar: [
+    {
+      type: "category",
+      label: "Getting Started",
+      items: ["Circographe/getting-started/introduction"],
+    },
+    {
+      type: "category",
+      label: "Features",
+      items: ["Circographe/features/features"],
+    },
+    {
+      type: "category",
+      label: "Open Source",
+      items: ["Circographe/open-source-contribution/how_to_contribute"],
+    },
+  ],
 };
 
 export default sidebars;
