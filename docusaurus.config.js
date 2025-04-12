@@ -38,18 +38,22 @@ const config = {
             defaultSidebarItemsGenerator,
             ...args
           }) {
-            const sidebarItems = await defaultSidebarItemsGenerator(args);
-            // Use appropriate sidebar based on path
+            // Return pre-defined sidebars based on directory name
             if (args.item.dirName === "Discord_bot_for_points") {
-              return "discordBotSidebar";
+              return require("./sidebars.js").default.discordBotSidebar;
             }
             if (args.item.dirName === "intuition") {
-              return "intuitionSidebar";
+              return require("./sidebars.js").default.intuitionSidebar;
             }
-            if (args.item.dirName === "agent") {
-              return "agentSidebar";
+            if (args.item.dirName === "Agent") {
+              return require("./sidebars.js").default.agentSidebar;
             }
-            return sidebarItems;
+            if (args.item.dirName === "Circographe") {
+              return require("./sidebars.js").default.circographeSidebar;
+            }
+
+            // Default case - generate sidebar items normally
+            return await defaultSidebarItemsGenerator(args);
           },
         },
         blog: {

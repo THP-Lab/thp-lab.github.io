@@ -36,7 +36,10 @@ const sidebars = {
     {
       type: "category",
       label: "Getting Started",
-      items: ["Circographe/getting-started/introduction"],
+      items: [
+        "Circographe/getting-started/introduction",
+        "Circographe/getting-started/local_development",
+      ],
     },
     {
       type: "category",
